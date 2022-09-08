@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>War Card Game </title>
     <script type="module" src="deckandscript.js"> </script> 
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
 </head>
 <body>  
-    
+<div> id="mocha" <p> <a href="."> Index</a> </p> </div>
+<div id="messages"></div>
+<div id="fixtures"></div>
+<script src="node_modules/mocha/mocha.js"></script>
+<script src="node_modules/chai/chai.js"></script>
+<script src="index.js"></script>
+<script>mocha.setup('bdd')</script>
+<script src="index_test.js"></script>
+<script>mocha.run();</script>
 </body>
 </html>
       

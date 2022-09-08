@@ -1,7 +1,7 @@
 {
   "name": "card-deck-html",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# Week6\" \r \"# Week-6\" \r \"# Week-6\" \r \"# Week-6\" \r \"# WarGameWeek6\"",
   "main": "deck.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,9 @@
     "chai": "^4.3.6",
     "mocha": "^10.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "no"
+  }
 }
