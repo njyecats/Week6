@@ -88,9 +88,9 @@ p2.addPlayerDeck(deck.cards.slice(midDeck, deck.numberOfCards));
 }
 
 function roundOutput(p1, p2, roundNum) {
-    console.log(`${p1.name} plays: ${p1.playerDeck[roundNum].value} of ${p1.playerDeck[roundNum].suit}
+    console.log(`${p1.name} plays: ${p1.playerDeck[roundNum].value} ${p1.playerDeck[roundNum].suit}
     `);
-    console.log(`${p2.name} plays: ${p2.playerDeck[roundNum].value} of ${p2.playerDeck[roundNum].suit}
+    console.log(`${p2.name} plays: ${p2.playerDeck[roundNum].value} ${p2.playerDeck[roundNum].suit}
     `);
   }
 
@@ -102,16 +102,16 @@ function roundOutput(p1, p2, roundNum) {
             } else if (CARD_VALUE_MAP[p1.playerDeck[i].value] < CARD_VALUE_MAP[p2.playerDeck[i].value]) {
         p2.playerScore += 1;
             } else {
-        console.log("Tie!");
+       // console.log("Tie!");
       }
     }
   }
 
   function finalScore(p1, p2) {
     if (p1.playerScore > p2.playerScore) {
-      console.log(`${p1.name} won!`);
+      console.log(`${p1.name} Won!`);
     } else if (p1.playerScore < p2.playerScore) {
-      console.log(`${p2.name} won!`);
+      console.log(`${p2.name} Won!`);
     } else {
       console.log(`${p1.name} and ${p2.name} Tie!`);
     }
@@ -122,29 +122,27 @@ let C = new Player("Charlie");
 let D = new Player("Sally");
 
 newGame(A, B);
-newGame(C, D);
-newGame(A, C);
-newGame(B, C);
-newGame(A, D);
-newGame(B, D);
-
 playRoundResults(A, B);
-playRoundResults(C, D);
-playRoundResults(A, C);
-playRoundResults(B, C);
-playRoundResults(A, D);
-playRoundResults(B, D);
- 
 finalScore(A, B);
-finalScore(C, D);
-finalScore(A, C);
-finalScore(B, C);
-finalScore(A, D);
-finalScore(B, D);
 
-function doSomething(x, y) {
-    if (typeof x != 'string') {
-        throw new Error('x must be a string');
-    }
-    return x + y;
-    }
+
+//newGame(C, D);
+//playRoundResults(C, D);
+//finalScore(C, D);
+
+//newGame(A, C);
+//playRoundResults(A, C);
+//finalScore(A, C);
+
+//newGame(B, C);
+//playRoundResults(B, C);
+//finalScore(B, C);
+
+//newGame(A, D);
+//playRoundResults(A, D);
+//finalScore(A, D);
+
+//newGame(B, D);
+//playRoundResults(B, D);
+//finalScore(B, D);
+
