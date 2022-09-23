@@ -120,24 +120,19 @@ let A = new Player("Snoopy");
 let B = new Player("Woodstock");
 let C = new Player("Charlie");
 let D = new Player("Sally");
-let E = new Player("Lucy");
-let F = new Player("Linus")
 
 newGame(A, B);
 playRoundResults(A, B);
 finalScore(A, B);
 
-newGame(C, D);
-playRoundResults(C, D);
-finalScore(C, D);
 
-newGame(E, F);
-playRoundResults(E, F);
-finalScore(E, F);
+//newGame(C, D);
+//playRoundResults(C, D);
+//finalScore(C, D);
 
-newGame(A, C);
-playRoundResults(A, C);
-finalScore(A, C);
+//newGame(A, C);
+//playRoundResults(A, C);
+//finalScore(A, C);
 
 //newGame(B, C);
 //playRoundResults(B, C);
@@ -150,4 +145,3 @@ finalScore(A, C);
 //newGame(B, D);
 //playRoundResults(B, D);
 //finalScore(B, D);
-
